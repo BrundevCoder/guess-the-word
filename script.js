@@ -2,6 +2,11 @@ const dashesDisplay = document.getElementById("dashesDisplay");
 const userInput = document.getElementById("userLetterGuess");
 const button = document.getElementById("tryGuess");
 const userGuesses = document.getElementById("guesses");
+const mainPage = document.getElementById("mainGame");
+const winPage = document.getElementById("winPage");
+const refreshBtn = document.getElementById("refresh-btn");
+const otherWordBtn = document.getElementById("anotherWordBtn");
+const info = document.getElementById("info");
 
 const wordsList = [
   "Fire",
@@ -11,7 +16,7 @@ const wordsList = [
 ];
 
 let word = "";
-//let tries = 10;
+let tries = 0;
 let letterUserTried = [];
 let wins = 0;
 
@@ -78,6 +83,10 @@ function handleWin() {
   }
   userInput.disabled = true;
   button.disabled = true;
+
+  mainPage.classList.remove("active");
+  winPage.classList.add("active");
+
   console.log("Win!");
 }
 
@@ -106,6 +115,10 @@ function handleInput() {
     return;
   }
 
+  // hide Btns and infos when start
+  otherWordBtn.style.display = "none";
+  info.style.display = "none";
+
   updateDashes(word, userLetter);
   updateDashes(word, userLetter.toUpperCase());
 
@@ -126,3 +139,9 @@ userInput.addEventListener("keydown", (e) => {
     handleInput();
   }
 });
+refreshBtn.addEventListener("click", () => {
+  location.reload();
+})
+otherWordBtn.addEventListener("dblclick", () => {
+  location.reload();
+})

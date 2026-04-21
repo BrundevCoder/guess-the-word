@@ -63,4 +63,84 @@ body {
   border-radius: 12px;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.55);
   background: #032b46;
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  color: #9fc1da;
+  font-size: 1rem;
+  transition: box-shadow, transform 100ms ease;
+}
+
+#tryGuess:hover {
+  transform: translateY(2px) translateX(2px);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.55);
+}
+
+#tryGuess:active {
+  transform: translateY(3.5px) translateX(3.5px) scale(0.95);
+  box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.55);
+}
+
+.win-header {
+  font-family: "Hanalei Fill", serif;
+  color: #032b46;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+#anotherWordBtn,
+#refresh-btn {
+  margin-top: 1.5rem;
+  font-family: "Hanalei Fill", serif;
+  color: #032b46;
+  font-weight: 600;
+  font-size: 3.5rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.55);
+  background: #032b46;
+  color: #9fc1da;
+  font-size: 1rem;
+  transition: box-shadow, transform 100ms ease;
+}
+
+#refresh-btn:hover {
+  transform: translateY(2px) translateX(2px);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.55);
+}
+
+#refresh-btn:active {
+  transform: translateY(3.5px) translateX(3.5px) scale(0.95);
+  box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.55);
+}
+
+#anotherWordBtn {
+  font-family: Arial;
+}
+
+#anotherWordBtn:hover {
+  transform: translateY(2px) translateX(2px);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.55);
+}
+
+#anotherWordBtn:active {
+  transform: translateY(3.5px) translateX(3.5px) scale(0.95);
+  box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.55);
+}
+
+.info {
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.45rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 450px) {
+  #dashesDisplay {
+    font-size: 1.15rem;
+  }
+  #guesses {
+    font-size: 1rem;
+  }
 }

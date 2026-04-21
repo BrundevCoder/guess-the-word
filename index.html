@@ -11,12 +11,15 @@
   <div id="mainGame" class="container active">
     <h1 id="dashesDisplay">word</h1>
     <p id="guesses">No Guesses yet!</p>
-    <input maxlength="1" type="text" name="letter-guess" placeholder="Your letter" id="userLetterGuess">
+    <input autocomplete="off" maxlength="1" type="text" name="letter-guess" placeholder="Your letter" id="userLetterGuess">
     <button id="tryGuess">Try</button>
+    <button id="anotherWordBtn">Another word?</button>
+    <p id="info" class="info">(double click)</p>
   </div>
 
   <div id="winPage" class="container">
-
+    <h1 class="win-header">You Win!</h1>
+    <button id="refresh-btn">Refresh</button>
   </div>
   
   <script src="script.js"></script>
