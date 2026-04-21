@@ -8,9 +8,16 @@
 </head>
 <body>
 
-  <h1 id="dashesDisplay">Debug</h1>
-  <input type="text" name="letter-guess" id="userLetterGuess">
-  <button id="tryGuess">Try</button>
+  <div id="mainGame" class="container active">
+    <h1 id="dashesDisplay">word</h1>
+    <p id="guesses">No Guesses yet!</p>
+    <input maxlength="1" type="text" name="letter-guess" placeholder="Your letter" id="userLetterGuess">
+    <button id="tryGuess">Try</button>
+  </div>
+
+  <div id="winPage" class="container">
+
+  </div>
   
   <script src="script.js"></script>
 </body>

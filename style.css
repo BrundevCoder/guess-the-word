@@ -1,0 +1,66 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Holtwood+One+SC&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9fc1da;
+  padding: 1rem;
+}
+
+/* MAIN SCREEN */
+.container {
+  display: none;
+  background: #62aada;
+  box-shadow: 6px 6px 0 #032b46;
+  padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+#guesses,
+#dashesDisplay {
+  text-align: center;
+  color: #fff;
+  font-family: "Rubik", serif;
+}
+
+.active {
+  display: flex;
+}
+
+#userLetterGuess {
+  font-family: "Rubik", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  width: calc(100% - 1rem);
+  border-radius: 8px;
+  border: #032b46 solid 2px;
+  height: 35px;
+  text-align: center;
+  padding: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#tryGuess {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.55);
+  background: #032b46;
+}
