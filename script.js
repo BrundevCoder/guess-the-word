@@ -9,10 +9,14 @@ const otherWordBtn = document.getElementById("anotherWordBtn");
 const info = document.getElementById("info");
 
 const wordsList = [
-  "Fire",
-  "Water",
-  "Flavortown",
-  "Arcade"
+  "Fire", "Water", "Flavortown",
+  "Arcade", "Book", "World", 
+  "Hello", "Problem", "Music",
+  "Government", "Games", "List",
+  "Array", "Coding", "Api",
+  "Hacker", "Happy", "JavaScript",
+  "React", "HTML", "CSS",
+  "Python", "Website", "Life",
 ];
 
 let word = "";
